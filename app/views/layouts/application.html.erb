@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your best ToDo App 2020</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://blackrockdigital.github.io/startbootstrap-new-age/css/new-age.min.css" rel="stylesheet">
+    <link href="app/assets/images/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app/assets/images/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+  </head>
+
+  <body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">ToDo List</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#login">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <%= yield %>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2020 Unicorn College. Eva Cernikova.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://unicorncollege.cz">About the University</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  </body>
+</html>
